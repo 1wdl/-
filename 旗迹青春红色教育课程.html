@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旗迹青春红色教育课程平台</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'SimHei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 使用黑体字体，符合红色文化风格 */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #e74c3c; /* 深红色背景 */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+        header img {
+            width: 20%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #e74c3c; /* 深红色 */
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            display: inline-block;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            background-color: #c0392b; /* 悬停时颜色变深 */
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #e74c3c; /* 标题使用深红色 */
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #e74c3c; /* 深红色 */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .thumbnails {
+            text-align: center;
+        }
+        .thumbnails img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .thumbnails img:hover {
+            transform: scale(1.05);
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form input[type="submit"] {
+            background-color: #e74c3c; /* 深红色提交按钮 */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        form input[type="submit"]:hover {
+            background-color: #c0392b; /* 按钮悬停时变色 */
+        }
+        .news-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .news-list li {
+            background-color: #f2f2f2;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .news-list li:hover {
+            background-color: #e1e1e1;
+            transform: translateY(-5px);
+        }
+
+        .news-list li a {
+            text-decoration: none;
+            color: #e74c3c; /* 新闻链接颜色使用深红色 */
+            font-weight: bold;
+        }
+
+        .news-list li a:hover {
+            color: #c0392b; /* 悬停时链接颜色 */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div><img src="PH/work.jpg" alt="旗帜图标"></div>
+        <h1>欢迎来到旗迹青春红色教育课程平台！</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="项目介绍.html">项目介绍</a></li>
+            <li><a href="中小学军事理论宣讲.html">中小学军事理论宣讲</a></li> <!-- 更新了这里的链接 -->
+            <li><a href="中小学心理健康教育.html">中小学心理健康教育</a></li> <!-- 更新了这里的链接 -->
+            <li><a href="爱国文化交流.html">爱国文化交流</a></li> <!-- 更新了这里的链接 -->
+            <li><a href="关于我们.html">关于我们</a></li>
+            <li><a href="联系我们.html">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <div class="thumbnails">
+                <a href="#"><img src="PH/work1.jpg" alt="作品1"></a>
+                <a href="#"><img src="PH/work2.jpg" alt="作品2"></a>
+                <a href="#"><img src="PH/work3.jpg" alt="作品3"></a>
+            </div>
+        </section>
+
+        <section>
+            <h2>新闻动态</h2>
+            <ul class="news-list">
+                <li><a href="https://mp.weixin.qq.com/s/ghcmral-hDCncp9BpyQdIw" target="_blank">文章1</a></li>
+                <li><a href="https://mp.weixin.qq.com/s/VefWWkAZWNOueAg56DDljg" target="_blank">文章2</a></li>
+                <li><a href="https://mp.weixin.qq.com/s/oo357PfSGxBMtIQFidgg3w" target="_blank">文章3</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 旗迹青春红色教育课程平台. 保留所有权利.
+    </footer>
+</body>
+</html>
