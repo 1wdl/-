@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中小学军事理论</title>
+    <style>
+        /* Reset styles */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #fff;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h2 {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .module {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .module img {
+            display: inline-block;
+            width: 50%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+            height: 50%;
+            overflow: hidden;
+        }
+
+        video {
+            width: 50%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .wechat-link, .purchase-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .purchase-link a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .purchase-link a:hover {
+            background-color: #c0392b;
+        }
+
+        .wechat-link a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2c3e50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .wechat-link a:hover {
+            background-color: #1a252f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>中小学军事理论</h1>
+    </header>
+
+    <main>
+        <section id="theory">
+            <h2>军事理论学习</h2>
+            <!-- Your content here -->
+        </section>
+
+        <section id="diy">
+            <h2>趣味科普</h2>
+
+            <div class="video-container">
+                <!-- Check if user has paid -->
+                <div id="videoSection">
+                    <video id="paidVideo" controls width="50%" style="display: none;">
+                        <source src="PHJunShi/junshi.mp4" type="video/mp4">
+                        <source src="PHJunShi/junshi.webm" type="video/webm">
+                        <source src="PHJunShi/junshi.ogv" type="video/ogg">
+                    </video>
+                    
+                    <div id="purchasePrompt">
+                        <p>请购买后观看此视频。</p>
+                        <div class="purchase-link">
+                            <a href="https://example.com/buy-paid-video" target="_blank">点击这里购买付费视频</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wechat-link">
+                <a href="https://mp.weixin.qq.com/s/some_example_link" target="_blank">30秒了解战术意识</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Simulate checking user payment status
+        function checkUserPayment() {
+            // This would typically be an AJAX request to check the user's payment status
+            // For now, simulate that the user has not paid (change this to true if the user has paid)
+            return false; // Change this to `true` if user has paid
+        }
+
+        // Function to show or hide video based on payment status
+        function handleVideoAccess() {
+            const hasPaid = checkUserPayment();
+
+            if (hasPaid) {
+                document.getElementById('paidVideo').style.display = 'block'; // Show video
+                document.getElementById('purchasePrompt').style.display = 'none'; // Hide purchase prompt
+            } else {
+                document.getElementById('paidVideo').style.display = 'none'; // Hide video
+                document.getElementById('purchasePrompt').style.display = 'block'; // Show purchase prompt
+            }
+        }
+
+        // Run the function on page load
+        window.onload = handleVideoAccess;
+    </script>
+</body>
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中小学军事理论</title>
+    <style>
+        /* Reset styles */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #fff;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h2 {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .module {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .module img {
+            display: inline-block;
+            width: 50%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+            height: 50%;
+            overflow: hidden;
+        }
+
+        video {
+            width: 50%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .wechat-link, .purchase-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .purchase-link a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .purchase-link a:hover {
+            background-color: #c0392b;
+        }
+
+        .wechat-link a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2c3e50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .wechat-link a:hover {
+            background-color: #1a252f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>中小学军事理论</h1>
+        <h1>哈哈，新页面<h1>
+    </header>
+
+    <main>
+        <section id="theory">
+            <h2>军事理论学习</h2>
+            <!-- Your content here -->
+        </section>
+
+        <section id="diy">
+            <h2>趣味科普</h2>
+
+            <div class="video-container">
+                <!-- Check if user has paid -->
+                <div id="videoSection">
+                    <video id="paidVideo" controls width="50%" style="display: none;">
+                        <source src="PHJunShi/junshi.mp4" type="video/mp4">
+                        <source src="PHJunShi/junshi.webm" type="video/webm">
+                        <source src="PHJunShi/junshi.ogv" type="video/ogg">
+                    </video>
+                    
+                    <div id="purchasePrompt">
+                        <p>请购买后观看此视频。</p>
+                        <div class="purchase-link">
+                            <a href="https://example.com/buy-paid-video" target="_blank">点击这里购买付费视频</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wechat-link">
+                <a href="https://mp.weixin.qq.com/s/some_example_link" target="_blank">30秒了解战术意识</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Simulate checking user payment status
+        function checkUserPayment() {
+            // This would typically be an AJAX request to check the user's payment status
+            // For now, simulate that the user has not paid (change this to true if the user has paid)
+            return false; // Change this to `true` if user has paid
+        }
+
+        // Function to show or hide video based on payment status
+        function handleVideoAccess() {
+            const hasPaid = checkUserPayment();
+
+            if (hasPaid) {
+                document.getElementById('paidVideo').style.display = 'block'; // Show video
+                document.getElementById('purchasePrompt').style.display = 'none'; // Hide purchase prompt
+            } else {
+                document.getElementById('paidVideo').style.display = 'none'; // Hide video
+                document.getElementById('purchasePrompt').style.display = 'block'; // Show purchase prompt
+            }
+        }
+
+        // Run the function on page load
+        window.onload = handleVideoAccess;
+    </script>
+</body>
+</html>
